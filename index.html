@@ -10,18 +10,21 @@
         @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+EAN13+Text&display=swap');
         </style>
 
+
 </head>
 
 <body>
+    <script src="DOcument.js"></script>
     <div class="wrapper">
         <div class="Bold">
             <div class="Ojb_stocks">
-                <input type="number" class="intors">
+                <input type="text" class="intors">
                 </div>
             <div class="keys">
-                <button    onclick="insert('')">%</button>
-                <button    onclick="insert('')">C</button>
+                <button    onclick="insert('%')">%</button>
+                <button    onclick= "clean()">C</button>
                 <button    onclick="insert('/')">/</button>
+                <button> y<sub>x</sub></button>
                 <button    onclick="insert('7')">7</button>
                 <button   onclick="insert('8')" >8</button>
                 <button    onclick="insert('9')">9</button>
@@ -34,8 +37,8 @@
                 <button   onclick="insert('2')">2</button>
                 <button   onclick="insert('3')">3</button>
                 <button   onclick="insert('+')">+</button>
-                <button   onclick="insert('0')">0</button>
-                <button   >=</button>
+                <button   onclick="insert('0')">0</button>   
+                <button  class="hoting" onclick="equal()" >=</button>
                 
 
                 </div>
